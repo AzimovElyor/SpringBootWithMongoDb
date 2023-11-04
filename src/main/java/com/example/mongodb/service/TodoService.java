@@ -36,5 +36,7 @@ public class TodoService {
     public void delete(String todoId){
         todoRepository.deleteById(todoId);
     }
-
+    public List<Todo> findByTitle(String title){
+        return todoRepository.finTodoByTitle(title);
+    }
 }
